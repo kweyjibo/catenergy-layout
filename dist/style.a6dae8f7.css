@@ -1,0 +1,30 @@
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+/* --------------- Common -------------------- */
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 980px;
+  max-width: 980px;
+}
+
+/* --------------- /common -------------------- */
+/* --------------- Imports -------------------- */
+/* --------------- /imports -------------------- */
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
