@@ -3,7 +3,7 @@
 /* --------------- Common -------------------- */
 body, html {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #000;
@@ -15,15 +15,67 @@ a {
 }
 
 .site {
-  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-i {
+  width: 50%;
+}
+.flex-i.__shift {
+  padding-top: 52px;
+  padding-left: 110px;
   box-sizing: border-box;
 }
 
 /* --------------- /common -------------------- */
 /* --------------- Imports -------------------- */
-.header {
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+.header-pic {
+  position: relative;
   height: 694px;
-  background: url("/index-background-desktop.9972aefc.jpg") right 0 no-repeat;
+  background: #64a83b url("/index-background-desktop.9972aefc.jpg") right 0 no-repeat;
+}
+
+.header-pic_cup {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+}
+
+.go-progmm {
+  padding-top: 110px;
+  padding-left: 80px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.go-progmm_t {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.go-progmm_dsc {
+  padding-top: 40px;
+  padding-bottom: 52px;
+}
+
+.go-progmm_btt {
+  padding: 12px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #67b737;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-nav {
+  margin-left: 130px;
+  padding-top: 72px;
 }
 
 .main-nav_lk {

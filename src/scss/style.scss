@@ -10,7 +10,7 @@
 body, html {
     margin: 0;
 
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Helvetica,sans-serif;
     font-size: 12px;
     line-height: 15px;
     color: #000;
@@ -22,8 +22,21 @@ a {
 }
 
 .site {
-    padding: $grid;
     box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-i {
+    width: 50%;
+
+    &.__shift {
+        padding-top: 52px;
+        padding-left: 110px;
+        box-sizing: border-box;
+    }
 }
 
 /* --------------- /common -------------------- */

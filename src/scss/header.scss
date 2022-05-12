@@ -1,4 +1,49 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
 .header {
+  
+}
+
+.header-pic {
+  position: relative;
   height: 694px;
-  background: url('../res/index-background-desktop.jpg') right 0 no-repeat;
+  background: #64a83b url('../res/index-background-desktop.jpg') right 0 no-repeat;
+}
+
+.header-pic_cup {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+}
+
+.go-progmm {
+  padding-top: 110px;
+  padding-left: 80px;
+
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.go-progmm_t {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.go-progmm_dsc {
+  padding-top: 40px;
+  padding-bottom: 52px;
+}
+
+.go-progmm_btt {
+  padding: $shift*3 $shift*6;
+
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $main-color;
+  border: 0;
+  cursor: pointer;
 }
