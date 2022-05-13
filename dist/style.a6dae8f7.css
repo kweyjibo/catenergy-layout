@@ -18,8 +18,16 @@ a {
   box-sizing: border-box;
 }
 
+.island.__shift {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
 .flex {
   display: flex;
+}
+.flex.__top100 {
+  padding-top: 100px;
 }
 
 .flex-i {
@@ -29,6 +37,9 @@ a {
   padding-top: 52px;
   padding-left: 110px;
   box-sizing: border-box;
+}
+.flex-i.__bg-gray {
+  background-color: #f2f2f2;
 }
 
 /* --------------- /common -------------------- */
@@ -55,6 +66,7 @@ a {
 }
 
 .go-progmm_t {
+  padding-right: 36px;
   font-size: 60px;
   line-height: 60px;
 }
@@ -85,6 +97,55 @@ a {
 }
 .main-nav_lk + .main-nav_lk {
   margin-left: 36px;
+}
+
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+.bunner {
+  padding: 48px 36px;
+  font-size: 16px;
+}
+
+.bunner-header {
+  display: flex;
+  align-items: center;
+}
+
+.bunner-ic {
+  width: 150px;
+}
+
+.banner-ic_i {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #67b737;
+  border-radius: 50%;
+}
+
+.bunner-title,
+.bunner-url {
+  text-transform: uppercase;
+}
+
+.bunner-title {
+  font-size: 36px;
+}
+
+.bunner-dsc {
+  padding-top: 36px;
+  padding-bottom: 28px;
+  line-height: 24px;
+}
+
+.bunner-url {
+  font-size: 20px;
+  color: #000;
+}
+
+.bunner-url_arrow {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 /* --------------- /imports -------------------- */

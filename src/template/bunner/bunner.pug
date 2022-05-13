@@ -1,0 +1,20 @@
+div(class='flex __top100')
+  mixin buner(ic,  title, dsc, urltext, url)
+    div(class='bunner')
+      div(class='bunner-header')
+        div(class='bunner-ic')
+          span(class='banner-ic_i')
+        div(class='bunner-title')=title
+      div(class='bunner-dsc')=dsc
+      div(class='bunner-footer')
+        a(href=url, class='bunner-url')=urltext
+          span(class='bunner-url_arrow')
+            <svg width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="#000" stroke-width="2" d="M0 6h18"/>
+              <path d="m24 6-6.75 5.196V.804L24 6Z" fill="#000"/>
+            </svg>
+
+  div(class='flex-i __bg-gray')
+    +buner('/', 'Lorem ispum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'more', '#')
+  div(class='flex-i __bg-gray')
+    +buner('/', 'Excepteur sint', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'go catalog', '#')

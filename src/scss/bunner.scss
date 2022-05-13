@@ -1,0 +1,55 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+.bunner{
+  padding: 48px 36px;
+
+  font-size: 16px;
+  
+}
+
+.bunner-header {
+  display: flex;
+  align-items: center;
+}
+
+.bunner-ic {
+  width: 150px;
+}
+
+.banner-ic_i {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.bunner-title,
+.bunner-url {
+  text-transform: uppercase;
+}
+
+.bunner-title {
+  font-size: 36px;
+}
+
+.bunner-dsc {
+  padding-top: 36px;
+  padding-bottom: 28px;
+  line-height: 24px;
+}
+
+.bunner-url {
+  font-size: 20px;
+  color: #000;
+}
+
+.bunner-url_arrow {
+  display: inline-block;
+  margin-left: 20px;
+}
