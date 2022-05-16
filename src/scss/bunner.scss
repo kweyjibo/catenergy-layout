@@ -20,13 +20,27 @@
   width: 150px;
 }
 
-.banner-ic_i {
+.banner-ic_cnt {
+  position: relative;
   display: inline-block;
   width: 100px;
   height: 100px;
 
   background-color: $main-color;
   border-radius: 50%;
+}
+
+.banner-ic_i {
+  position: absolute;
+
+  &.__cat {
+    left: 18px;
+  }
+
+  &.__leo {
+    top: 20px;
+    left: -18px;
+  }
 }
 
 .bunner-title,

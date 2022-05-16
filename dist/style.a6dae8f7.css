@@ -38,6 +38,9 @@ a {
   padding-left: 110px;
   box-sizing: border-box;
 }
+.flex-i.__shift-left {
+  margin-left: 50px;
+}
 .flex-i.__bg-gray {
   background-color: #f2f2f2;
 }
@@ -115,12 +118,24 @@ a {
   width: 150px;
 }
 
-.banner-ic_i {
+.banner-ic_cnt {
+  position: relative;
   display: inline-block;
   width: 100px;
   height: 100px;
   background-color: #67b737;
   border-radius: 50%;
+}
+
+.banner-ic_i {
+  position: absolute;
+}
+.banner-ic_i.__cat {
+  left: 18px;
+}
+.banner-ic_i.__leo {
+  top: 20px;
+  left: -18px;
 }
 
 .bunner-title,

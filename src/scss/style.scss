@@ -50,6 +50,10 @@ a {
         box-sizing: border-box;
     }
 
+    &.__shift-left {
+        margin-left: 50px;
+    }
+
     &.__bg-gray {
         background-color: #f2f2f2;
     }
