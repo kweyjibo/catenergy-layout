@@ -1,13 +1,18 @@
 header(class='header')
-  div(class='flex')
+  div(class='header-top')
+    div(class='flex __pos')
+      div(class='flex-i __shift')
+        include logo.pug
+      div(class='flex-i')
+        include menu.pug
+  div(class='flex __header-programm')
     div(class='flex-i __shift')
-      include logo.pug
       div(class='go-progmm')
+        div(class='header-cup')
+          img(class="header-cup_i", src='./res/index-can.png')
         div(class='go-progmm_t')='Lorem ipsum dolor sit amet'
         div(class='go-progmm_dsc')='Lorem ipsum dolor sit amet'
         button(class='go-progmm_btt')='Lorem ipsum'
-    div(class='flex-i')
+
+    div(class='flex-i __pic')
       div(class='header-pic')
-        include menu.pug
-        div(class='header-pic_cup')
-          img(class="header-pic_cup_i", src='./res/index-can.png')

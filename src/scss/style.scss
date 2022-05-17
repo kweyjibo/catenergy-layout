@@ -2,6 +2,8 @@
 
 @import "vars";
 
+$site-shift: 110px;
+
 /* --------------- /vars -------------------- */
 
 
@@ -10,7 +12,7 @@
 body, html {
     margin: 0;
 
-    font-family: Helvetica,sans-serif;
+    font-family: Tahoma, Helvetica,sans-serif;
     font-size: 12px;
     line-height: 15px;
     color: #000;
@@ -28,13 +30,20 @@ a {
 .island {
 
     &.__shift {
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: $site-shift;
+        padding-right: $site-shift;
     }
 }
 
 .flex {
     display: flex;
+
+    &.__pos {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
 
     &.__top100 {
         padding-top: 100px;
@@ -46,12 +55,16 @@ a {
 
     &.__shift {
         padding-top: 52px;
-        padding-left: 110px;
+        padding-left: $site-shift;
         box-sizing: border-box;
     }
 
-    &.__shift-left {
+    &.__banner {
         margin-left: 50px;
+    }
+
+    &.__top100 {
+        padding-top: 100px;
     }
 
     &.__bg-gray {
@@ -69,3 +82,10 @@ a {
 @import "bunner";
 
 /* --------------- /imports -------------------- */
+
+
+/* --------------- Imports media -------------------- */
+
+@import "tablet";
+
+/* --------------- /imports media -------------------- */

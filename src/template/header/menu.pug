@@ -1,7 +1,7 @@
 nav(class='main-nav')
   mixin navLink(title, url, count)
-    a(href=url, class="main-nav_lk")= title
+    a(href=url, class="main-nav_lk")&attributes(attributes)= title
 
-  +navLink('Home', '#')
+  +navLink('Home', '#')(class='__active')
   +navLink('Products', '#')
   +navLink('Programm', '#')

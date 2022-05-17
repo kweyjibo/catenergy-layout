@@ -3,7 +3,7 @@
 /* --------------- Common -------------------- */
 body, html {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Tahoma, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #000;
@@ -26,6 +26,12 @@ a {
 .flex {
   display: flex;
 }
+.flex.__pos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 .flex.__top100 {
   padding-top: 100px;
 }
@@ -38,8 +44,11 @@ a {
   padding-left: 110px;
   box-sizing: border-box;
 }
-.flex-i.__shift-left {
+.flex-i.__banner {
   margin-left: 50px;
+}
+.flex-i.__top100 {
+  padding-top: 100px;
 }
 .flex-i.__bg-gray {
   background-color: #f2f2f2;
@@ -55,13 +64,15 @@ a {
   background: #64a83b url("/index-background-desktop.9972aefc.jpg") right 0 no-repeat;
 }
 
-.header-pic_cup {
+.header-cup {
   position: absolute;
-  bottom: 0;
-  left: -20%;
+  top: 86px;
+  right: -396px;
+  z-index: 2;
 }
 
 .go-progmm {
+  position: relative;
   padding-top: 110px;
   padding-left: 80px;
   font-size: 20px;
@@ -80,6 +91,8 @@ a {
 }
 
 .go-progmm_btt {
+  position: relative;
+  z-index: 3;
   padding: 12px 24px;
   color: #fff;
   text-transform: uppercase;
@@ -89,14 +102,17 @@ a {
 }
 
 .main-nav {
-  margin-left: 130px;
   padding-top: 72px;
+  padding-left: 30px;
 }
 
 .main-nav_lk {
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
+}
+.main-nav_lk.__active {
+  border-bottom: 2px solid #fff;
 }
 .main-nav_lk + .main-nav_lk {
   margin-left: 36px;
@@ -164,5 +180,66 @@ a {
 }
 
 /* --------------- /imports -------------------- */
+/* --------------- Imports media -------------------- */
+@media (max-width: 1268px) {
+  .island.__shift {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .flex-i.__shift {
+    padding-left: 30px;
+  }
+
+  .flex-i.__banner {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+@media (max-width: 1268px) {
+  .flex.__media-wide {
+    display: block;
+  }
+  .flex.__media-wide .flex-i {
+    width: 100%;
+  }
+
+  .header-pic {
+    background: none;
+  }
+
+  .main-nav_lk {
+    color: #000;
+  }
+  .main-nav_lk.__active {
+    border-bottom-color: #67b737;
+  }
+
+  .flex.__header-programm .flex-i {
+    width: 100%;
+  }
+  .flex.__header-programm .flex-i.__pic {
+    display: none;
+  }
+
+  .go-progmm {
+    padding-bottom: 340px;
+  }
+
+  .go-progmm_t {
+    padding-right: 0;
+  }
+
+  .header-cup {
+    left: 50%;
+    margin-left: -276px;
+    right: auto;
+    top: auto;
+    bottom: -96px;
+  }
+}
+/* --------------- /imports media -------------------- */
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

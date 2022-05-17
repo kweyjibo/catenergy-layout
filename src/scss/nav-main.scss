@@ -1,12 +1,16 @@
 .main-nav {
-  margin-left: 130px;
   padding-top: 72px;
+  padding-left: 30px;
 }
 
 .main-nav_lk {
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
+
+  &.__active {
+    border-bottom: 2px solid #fff;
+  }
 
   & + & {
     margin-left: 36px;

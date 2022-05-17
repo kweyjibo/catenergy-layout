@@ -1,0 +1,30 @@
+
+@media (max-width: $tablet) {
+
+  $site-shift: 30px;
+
+  .island {
+
+    &.__shift {
+        padding-left: $site-shift;
+        padding-right: $site-shift;
+    }
+  }
+
+  .flex-i {
+    &.__shift {
+      padding-left: $site-shift;
+    }
+  }
+
+  .flex-i {
+  
+      &.__banner {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+  }
+  
+}
+
+@import "header-tablet";

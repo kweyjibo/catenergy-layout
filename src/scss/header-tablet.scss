@@ -1,0 +1,56 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+
+@media (max-width: $tablet) {
+
+  .flex.__media-wide {
+    display: block;
+
+    .flex-i {
+      width: 100%;
+    }
+  }
+
+  .header-pic {
+    background: none;
+  }
+
+  .main-nav_lk {
+    color: #000;
+
+    &.__active {
+      border-bottom-color: $main-color;
+    }
+  }
+
+  .flex.__header-programm {
+    .flex-i {
+      width: 100%;
+    }
+
+    .flex-i.__pic {
+      display: none;
+    }
+  }
+
+  .go-progmm {
+    padding-bottom: 340px;
+  }
+
+  .go-progmm_t {
+    padding-right: 0;
+  }
+
+  .header-cup {
+    left: 50%;
+    margin-left: -276px;
+    right: auto;
+    top: auto;
+    bottom: -96px;
+  }
+  
+}
