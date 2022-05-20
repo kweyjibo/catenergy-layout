@@ -19,8 +19,7 @@ a {
 }
 
 .island.__shift {
-  padding-left: 110px;
-  padding-right: 110px;
+  padding: 50px 110px;
 }
 
 .flex {
@@ -179,12 +178,16 @@ a {
   margin-left: 20px;
 }
 
+.footer {
+  height: 150px;
+  background-color: #f2f2f2;
+}
+
 /* --------------- /imports -------------------- */
 /* --------------- Imports media -------------------- */
 @media (max-width: 1268px) {
   .island.__shift {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px 30px;
   }
 
   .flex-i.__shift {
@@ -225,7 +228,7 @@ a {
   }
 
   .go-progmm {
-    padding-bottom: 340px;
+    padding-bottom: 460px;
   }
 
   .go-progmm_t {
@@ -237,7 +240,7 @@ a {
     margin-left: -276px;
     right: auto;
     top: auto;
-    bottom: -96px;
+    bottom: -23px;
   }
 }
 /* --------------- /imports media -------------------- */

@@ -30,8 +30,7 @@ a {
 .island {
 
     &.__shift {
-        padding-left: $site-shift;
-        padding-right: $site-shift;
+        padding: 50px $site-shift;
     }
 }
 
@@ -80,6 +79,7 @@ a {
 @import "header";
 @import "nav-main";
 @import "bunner";
+@import "footer";
 
 /* --------------- /imports -------------------- */
 
