@@ -2,8 +2,6 @@
 
 @import "vars";
 
-$site-shift: 110px;
-
 /* --------------- /vars -------------------- */
 
 
@@ -47,6 +45,11 @@ a {
     &.__top100 {
         padding-top: 100px;
     }
+
+    &.__center {
+        align-items: center;
+        white-space: nowrap;
+    }
 }
 
 .flex-i {
@@ -68,6 +71,15 @@ a {
 
     &.__bg-gray {
         background-color: #f2f2f2;
+    }
+
+    .flex.__center & {
+        width: auto;
+    }
+
+    &.__wide {
+        flex: 1 100%;
+        text-align: center;
     }
 }
 

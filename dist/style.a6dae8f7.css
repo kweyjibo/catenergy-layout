@@ -34,6 +34,10 @@ a {
 .flex.__top100 {
   padding-top: 100px;
 }
+.flex.__center {
+  align-items: center;
+  white-space: nowrap;
+}
 
 .flex-i {
   width: 50%;
@@ -51,6 +55,13 @@ a {
 }
 .flex-i.__bg-gray {
   background-color: #f2f2f2;
+}
+.flex.__center .flex-i {
+  width: auto;
+}
+.flex-i.__wide {
+  flex: 1 100%;
+  text-align: center;
 }
 
 /* --------------- /common -------------------- */
@@ -178,8 +189,11 @@ a {
   margin-left: 20px;
 }
 
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
 .footer {
-  height: 150px;
+  padding: 50px 110px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
