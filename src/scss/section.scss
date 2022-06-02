@@ -1,0 +1,45 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+$icon-size: 80px;
+
+.section-title {
+  padding-bottom: 60px;
+
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.section-item {
+  position: relative;
+}
+
+.section-item_num {
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  font-size: 280px;
+  line-height: 190px;
+  
+  color: #f2f2f2;
+}
+
+.section-ic {
+  width: $icon-size;
+  height: $icon-size;
+
+  background-color: $main-color;
+}
+
+.section-item_tx {
+  position: relative;
+  padding-top: 28px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #444;
+}

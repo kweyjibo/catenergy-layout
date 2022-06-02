@@ -30,6 +30,10 @@ a {
     &.__shift {
         padding: 50px $site-shift;
     }
+
+    &.__shift-notop {
+        padding: 0 $site-shift 50px;
+    }
 }
 
 .flex {
@@ -91,6 +95,7 @@ a {
 @import "header";
 @import "nav-main";
 @import "bunner";
+@import "section";
 @import "footer";
 
 /* --------------- /imports -------------------- */
