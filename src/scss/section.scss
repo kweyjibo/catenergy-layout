@@ -6,6 +6,26 @@
 
 $icon-size: 80px;
 
+.section {
+  counter-reset: section-counter;
+}
+
+.section-item {
+  counter-increment: section-counter;
+
+  &:before {
+    content: counter(section-counter);
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    font-size: 280px;
+    line-height: 190px;
+    
+    color: #f2f2f2;
+  }
+}
+
 .section-title {
   padding-bottom: 60px;
 
@@ -15,29 +35,34 @@ $icon-size: 80px;
 
 .section-item {
   position: relative;
+  padding-bottom: 20px;
+  min-height: 220px;
 }
 
-.section-item_num {
-  position: absolute;
-  right: 0;
-  top: 0;
-  
-  font-size: 280px;
-  line-height: 190px;
-  
-  color: #f2f2f2;
+.section-ic_cnt {
+  display: inline-block;
 }
 
 .section-ic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: $icon-size;
   height: $icon-size;
 
   background-color: $main-color;
 }
 
+.section-ic_url {
+  width: 25px;
+  height: 28px;
+}
+
 .section-item_tx {
   position: relative;
   padding-top: 28px;
+  padding-right: 48px;
 
   font-size: 16px;
   line-height: 24px;

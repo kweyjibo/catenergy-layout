@@ -8,20 +8,37 @@
     &.__shift {
         padding: 30px $site-shift;
     }
-  }
 
-  .flex-i {
-    &.__shift {
-      padding-left: $site-shift;
+    &.__shift-notop {
+      padding: 0 $site-shift 30px;
     }
   }
 
+  .flex:not(.__center) {
+    flex-wrap: wrap;
+  }
+
   .flex-i {
-  
-      &.__banner {
-        margin-left: 0;
-        margin-top: 30px;
-      }
+    .flex.__4 & + & {
+      padding-left: 0;
+    }
+
+    &.__shift {
+      padding-left: $site-shift;
+    }
+
+    .flex.__banner & {
+      width: 100%;
+    }
+
+    .flex.__banner & + & {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .footer {
+    padding: 30px $site-shift;
   }
   
 }
