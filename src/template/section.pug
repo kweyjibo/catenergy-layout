@@ -2,8 +2,8 @@ mixin sectionItem(svgurl, text)
   div(class='section-item')
     div(class='section-ic')
       span(class='section-ic_cnt')
-          svg(class='section-ic_url')
-            use(xlink:href=svgurl)
+        img(class='section-ic_url', src=svgurl)
+
     div(class='section-item_tx')=text
 
 
