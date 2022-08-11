@@ -4,7 +4,7 @@
   "description": "Layout",
   "scripts": {
     "dev": "parcel ./src/index.pug --port 1111",
-    "build": "parcel build ./src/index.pug --no-content-hash --no-source-maps",
+    "build": "parcel build ./src/index.pug -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
