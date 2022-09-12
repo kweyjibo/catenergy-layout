@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Layout",
   "scripts": {
-    "dev": "parcel ./src/index.pug --port 1111",
+    "dev": "parcel ./src/index.pug --port 1111 -d public",
     "build": "parcel build ./src/index.pug -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

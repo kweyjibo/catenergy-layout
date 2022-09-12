@@ -92,6 +92,10 @@ a {
     }
 }
 
+.media-mobile {
+    display: none;
+}
+
 /* --------------- /common -------------------- */
 
 
@@ -109,5 +113,6 @@ a {
 /* --------------- Imports media -------------------- */
 
 @import "tablet";
+@import "mobile";
 
 /* --------------- /imports media -------------------- */
