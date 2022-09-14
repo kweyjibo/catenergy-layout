@@ -1,3 +1,9 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
 
 @media (max-width: $tablet) {
 
@@ -22,6 +28,11 @@
     .flex.__4 & + & {
       padding-left: 0;
     }
+
+    .flex.__4 & {
+        width: 50%;
+    }
+    
 
     &.__shift {
       padding-left: $site-shift;

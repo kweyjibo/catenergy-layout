@@ -1,0 +1,30 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+@media (max-width: $mobile) {
+
+  .bunner {
+    padding: $shift*6 18px;
+  }
+
+  .bunner-ic {
+    width: 120px;
+  } 
+
+  .bunner-title {
+    font-size: 24px;
+  }
+
+  .bunner-dsc {
+    padding-top: 18px;
+    padding-bottom: $shift*3;
+  }
+
+  .bunner-footer {
+    padding-top: 20px;
+    border-top: 1px solid #d9d9d9;
+  }
+}

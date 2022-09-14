@@ -1,0 +1,31 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+@media (max-width: $mobile) {
+
+  .section-item {
+    display: flex;
+    min-height: 0;
+  }
+
+  .section-title {
+    padding-bottom: $shift*8;
+    font-size: 36px;
+  }
+
+  .section-item:before {
+    content: ' ';
+  }
+
+  .section-item_tx {
+    flex: 1;
+
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: $shift*5;
+  }
+}

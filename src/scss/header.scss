@@ -52,3 +52,8 @@
   border: 0;
   cursor: pointer;
 }
+
+.logo-tx.__mobile {
+  display: inline-block;
+  padding-top: $shift*3;
+}

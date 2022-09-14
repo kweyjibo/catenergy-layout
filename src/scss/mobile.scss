@@ -1,3 +1,9 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
 
 @media (max-width: $mobile) {
 
@@ -19,13 +25,15 @@
   }
 
   .flex-i {
-    .flex.__4 & + & {
-      padding-left: 0;
+
+    .flex.__4 & {
+      width: 100%;
     }
 
     &.__shift {
       padding-top: 12px;
       padding-left: $site-shift;
+      padding-right: $site-shift;
     }
 
     .flex.__banner & {
@@ -53,3 +61,5 @@
 }
 
 @import "header-mobile";
+@import "bunner-mobile";
+@import "section-mobile";

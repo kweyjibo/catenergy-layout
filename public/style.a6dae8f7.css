@@ -121,6 +121,11 @@ a {
   cursor: pointer;
 }
 
+.logo-tx.__mobile {
+  display: inline-block;
+  padding-top: 12px;
+}
+
 .main-nav {
   padding-top: 72px;
   padding-left: 30px;
@@ -279,6 +284,8 @@ a {
 
 /* --------------- /imports -------------------- */
 /* --------------- Imports media -------------------- */
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
 @media (max-width: 1268px) {
   .island.__shift {
     padding: 30px 30px;
@@ -293,6 +300,9 @@ a {
 
   .flex.__4 .flex-i + .flex-i {
     padding-left: 0;
+  }
+  .flex.__4 .flex-i {
+    width: 50%;
   }
   .flex-i.__shift {
     padding-left: 30px;
@@ -337,10 +347,6 @@ a {
     display: none;
   }
 
-  .flex.__4 .flex-i {
-    width: 50%;
-  }
-
   .go-progmm {
     padding-bottom: 460px;
   }
@@ -357,6 +363,8 @@ a {
     bottom: -23px;
   }
 }
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
 @media (max-width: 640px) {
   .island.__shift {
     padding: 20px 20px;
@@ -369,12 +377,13 @@ a {
     flex-wrap: wrap;
   }
 
-  .flex.__4 .flex-i + .flex-i {
-    padding-left: 0;
+  .flex.__4 .flex-i {
+    width: 100%;
   }
   .flex-i.__shift {
     padding-top: 12px;
     padding-left: 20px;
+    padding-right: 20px;
   }
   .flex.__banner .flex-i {
     width: 100%;
@@ -424,12 +433,10 @@ a {
     display: none;
   }
 
-  .flex.__4 .flex-i {
-    width: 50%;
-  }
-
   .go-progmm {
-    padding-bottom: 460px;
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
   }
 
   .go-progmm_t {
@@ -438,12 +445,74 @@ a {
     line-height: 42px;
   }
 
+  .go-progmm_dsc {
+    padding-top: 20px;
+  }
+
   .header-cup {
+    width: 280px;
     left: 50%;
-    margin-left: -276px;
-    right: auto;
-    top: auto;
-    bottom: -23px;
+    margin-left: -140px;
+    position: relative;
+    bottom: 0;
+  }
+
+  .header-cup_i {
+    width: 100%;
+  }
+
+  .go-progmm_btt {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+@media (max-width: 640px) {
+  .bunner {
+    padding: 24px 18px;
+  }
+
+  .bunner-ic {
+    width: 120px;
+  }
+
+  .bunner-title {
+    font-size: 24px;
+  }
+
+  .bunner-dsc {
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+
+  .bunner-footer {
+    padding-top: 20px;
+    border-top: 1px solid #d9d9d9;
+  }
+}
+/* --------------- Vars -------------------- */
+/* --------------- /vars -------------------- */
+@media (max-width: 640px) {
+  .section-item {
+    display: flex;
+    min-height: 0;
+  }
+
+  .section-title {
+    padding-bottom: 32px;
+    font-size: 36px;
+  }
+
+  .section-item:before {
+    content: " ";
+  }
+
+  .section-item_tx {
+    flex: 1;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 20px;
   }
 }
 /* --------------- /imports media -------------------- */
