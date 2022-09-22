@@ -1,0 +1,39 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+
+@media (max-width: $mobile) {
+
+  .main-nav {
+    position: relative;
+    padding: 0;
+    margin-right: $shift*5;
+    float: right;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-trigger {
+    display: block;
+  }
+
+  .nav-popup {
+    display: none;
+    position: absolute;
+    right: 20px;
+
+    background-color: #fff;
+  }
+
+  .nav-checkbox:checked ~ .nav-popup {
+    display: block;
+  }
+
+  .main-nav_lk {
+    display: block;
+  }
+}

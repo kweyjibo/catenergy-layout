@@ -2,6 +2,10 @@ nav(class='main-nav')
   mixin navLink(title, url, count)
     a(href=url, class="main-nav_lk")&attributes(attributes)= title
 
-  +navLink('Home', '#')(class='__active')
-  +navLink('Products', '#')
-  +navLink('Programm', '#')
+  label(for='nav-trigger' class='nav-trigger')
+  input(type='checkbox' id='nav-trigger' class='nav-checkbox')
+
+  div(class='nav-popup')
+    +navLink('Home', '#')(class='__active')
+    +navLink('Products', '#')
+    +navLink('Programm', '#')

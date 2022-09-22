@@ -54,15 +54,18 @@ a {
         align-items: center;
         white-space: nowrap;
     }
+
 }
 
 .flex-i {
-    width: 50%;
+
+    .flex.__2 & {
+        width: 50%;
+    }
 
     .flex.__4 & {
         width: 25%;
-        }
-
+    }
         
     .flex.__4 & + & {
         padding-left: 36px;
@@ -76,10 +79,6 @@ a {
 
     &.__top100 {
         padding-top: 100px;
-    }
-
-    .flex.__center & {
-        width: auto;
     }
 
     &.__wide {
