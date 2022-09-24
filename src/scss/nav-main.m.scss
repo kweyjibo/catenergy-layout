@@ -24,9 +24,14 @@
   .nav-popup {
     display: none;
     position: absolute;
-    right: 20px;
+    top: $shift*8;
+    right: 0;
+    padding: $shift*4;
 
     background-color: #fff;
+    border: 1px solid #67b737;
+    border-radius: 4px;
+    text-align: right;
   }
 
   .nav-checkbox:checked ~ .nav-popup {
@@ -35,5 +40,13 @@
 
   .main-nav_lk {
     display: block;
+
+    &.__active {
+      border-bottom: 0;
+    }
+
+    & + & {
+      margin-top: $shift*4;
+    }
   }
 }
